@@ -1,0 +1,117 @@
+#Station {
+    margin-right: 20px;
+  }
+  
+  h2 {
+    color: teal;
+    font-family: "Georgia", "Times", "Times New Roman", "serif";
+    border-bottom: 1px solid grey;
+
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 36px;
+  }
+  
+  .wrap {
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+    color: #777777;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px;
+    border-color: #dddddd;
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 2px solid grey;
+    color:#cccccc;
+  }
+  
+  .Name {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    flex: initial;
+    display: block;
+    color: white;
+    background-color: #4aaaa5;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+  }
+  
+  .active {
+    flex: 1;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .active:hover {
+    background-color: rgb(136, 186, 199);
+  }
+
+  .indent {
+    text-indent: 20px;
+  }
+
+  .footer {
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: #666666;
+    color: whitesmoke;
+    text-align: center;
+    border-top: 4px solid teal;
+  }
+  
+  .card-group {
+    display: flex;
+  }
+
+  .card {
+    flex: 1;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .card-body {
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+    color: black;
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+    color: #777777;
+  }
+
+  .card-img-top {
+    align-content: center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
