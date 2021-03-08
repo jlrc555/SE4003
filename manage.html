@@ -31,7 +31,7 @@
           <div class="card-body">
             <h5 class="card-title">Maintenance</h5>
             <p class="card-text">Manage system maintenance for each module deployed.</p>
-            <p class="card-text"><small class="text-muted">Last updated Feb 2021</small></p>
+            <p class="card-text"><small class="text-muted">Last updated March 2021</small></p>
           </div>
         </div>
 
@@ -44,19 +44,19 @@
           <div class="card-body">
             <h5 class="card-title">Data</h5>
             <p class="card-text"> Manage and view data collected by deployed modules.</p>
-            <p class="card-text"><small class="text-muted">Last updated Feb 2021</small></p>
+            <p class="card-text"><small class="text-muted">Last updated March 2021</small></p>
           </div>
         </div>
         </div>
-        <form action="/action_page.php">
           <label for="StaNum">Station Number:</label>
           <input type="text" id="StaNum" name="StaNum"><br><br>
           <label for="Date">Date:</label>
           <input type="date" id="Date" name="Date"><br><br>
-          <input type="submit" value="Submit">
-        </form>
-        
-        <p>Click the "Submit" button".</p>
+          <label for="Time">Time:</label>
+          <input type="time" id="Time" name="Time"><br><br>
+          <input type="submit" value="Submit" onclick="myFunction()">
+          <p>Enter Station Number, Date and Time then click the "Submit" button".</p>
+      
 
         <style>
           table {
@@ -82,7 +82,6 @@
           
           <table>
             <tr>
-              <th>Station</th>
               <th>Anemometer (m/s)</th>
               <th>Anemometer (km/hr)</th>
               <th>Anemometer wind direction</th>
@@ -95,38 +94,25 @@
               
             </tr>
             <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <th><p id="demo"></p></th>
             </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
-            </tr>
-            <tr>
-              <td>Ernst Handel</td>
-              <td>Roland Mendel</td>
-              <td>Austria</td>
-            </tr>
-            <tr>
-              <td>Island Trading</td>
-              <td>Helen Bennett</td>
-              <td>UK</td>
-            </tr>
-            <tr>
-              <td>Laughing Bacchus Winecellars</td>
-              <td>Yoshi Tannamuri</td>
-              <td>Canada</td>
-            </tr>
-            <tr>
-              <td>Magazzini Alimentari Riuniti</td>
-              <td>Giovanni Rovelli</td>
-              <td>Italy</td>
-            </tr>
-          </table>
-          
+            <table>
+
       </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("demo")
+          x.innerHTML = Math.floor((Math.random() * 100) + 1);
+        }
+        </script> 
     <div class="footer">
       <p>Copyright (c)</p>
     </div>
