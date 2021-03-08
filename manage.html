@@ -25,7 +25,7 @@
         <!--First Card-->
         <div class="card">
           <a href="https://nps01-my.sharepoint.com/:x:/g/personal/josue_ramoscalvario_nps_edu/EVicm-uxEPJHqcK1VW8ULJgBHD6xzAaFJEY1ecXMSiA2Lg?e=zLjFYw" target="_blank" >
-            <img class="card-img-top" src="./assets/images/Maintenance.png" alt="Maintenance" height= "200px", weight="200"> 
+            <img class="card-img-top" src="./assets/images/Maintenance.png" alt="Maintenance" height= "150px", weight="150"> 
             <!--reference: https://www.briarcliff.edu/media/325117/icon_maintenance.png-->
           </a>
           <div class="card-body">
@@ -38,7 +38,7 @@
         <!--Second Card-->
         <div class="card">
             <a href="https://nps01-my.sharepoint.com/:x:/g/personal/josue_ramoscalvario_nps_edu/EbLjHs8PFA5Ngn_S1nYww1UBVgp7x94CQodsE_2mU2jPKw?e=03Ro61" target="_blank">
-              <img class="card-img-top" src="./assets/images/Data.png" alt="Data" height= "200px", weight="200">
+              <img class="card-img-top" src="./assets/images/Data.png" alt="Data" height= "150px", weight="150">
               <!--reference: https://st3.depositphotos.com//10533038/13609/i/450/depositphotos_136097674-stock-photo-computer-icon-with-satellite-dish.jpg-->
             </a>
           <div class="card-body">
@@ -48,14 +48,15 @@
           </div>
         </div>
         </div>
+        <p>For specific information, enter Station Number, Date and Time then click the "Submit" button".</p>
           <label for="StaNum">Station Number:</label>
-          <input type="text" id="StaNum" name="StaNum"><br><br>
+          <input type="text" id="StaNum" name="StaNum">
           <label for="Date">Date:</label>
-          <input type="date" id="Date" name="Date"><br><br>
+          <input type="date" id="Date" name="Date">
           <label for="Time">Time:</label>
-          <input type="time" id="Time" name="Time"><br><br>
+          <input type="time" id="Time" name="Time">
           <input type="submit" value="Submit" onclick="myFunction()">  
-          <p>Enter Station Number, Date and Time then click the "Submit" button".</p>
+          
       
 
         <style>
@@ -78,9 +79,10 @@
           </head>
           <body>
           
-          <h2>HTML Table</h2>    
+          <h2>Station Data</h2>    
           
           <table>
+            <h3>Weather Data</h3> 
             <tr>
               <th>Anemometer (m/s)</th>
               <th>Anemometer (km/hr)</th>
@@ -90,8 +92,7 @@
               <th>Thermometer (C)</th>
               <th>Rain Gauge (mm)</th>
               <th>Sunlight (watts per sq m)</th>
-              <th>Transmissioner (m)</th>
-              
+              <th>Transmissioner (m)</th> 
             </tr>
             <tr>
               <td><p id="demo"></p></td> 
@@ -104,7 +105,33 @@
               <td><p id="demo"></p></td>
               <th><p id="demo"></p></th>
             </tr>
+          </table>
+
             <table>
+            <h3>Maintenance Data</h3> 
+            <tr>
+              <th>Power (Solar)</th>
+              <th>Power (Wind)</th>
+              <th>Generating</th>
+              <th>Stelite Communication</th>
+              <th>Security Status</th>
+              <th>BIT</th>
+              <th>Software Version</th>
+              <th>Backup Generator Status</th>
+              <th>Backup Communication Status</th>  
+            </tr>
+            <tr>
+              <td><p id="demo"></p></td> 
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <td><p id="demo"></p></td>
+              <th><p id="demo"></p></th>
+            </tr>
+          </table>
 
       </div>
       <script>
@@ -113,6 +140,7 @@
           x.innerHTML = Math.floor((Math.random() * 100) + 1);
         }
         </script> 
+
     <div class="footer">
       <p>Copyright (c)</p>
     </div>
