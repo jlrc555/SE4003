@@ -52,11 +52,14 @@
                 <img src="./assets/images/excel_icon.png" alt="Weather Data" width="30" height="30"> </a></p>
           </div>
         </div>
-        </div>
+      </div>
         <h4>To push a software update, enter Station Number, Choose File and click the "Submit" button".</h4>
+        <h5>Note: The update will not be pushed unless the battery level of the station(s) is at or above the percentage entered.</h5>
             <label for="StaNum">Station Number:</label>
-            <input type="text" id="StaNum" name="StaNum">
-            <input type="file" id="myFile" name="filename">
+            <input type="text" id="StaNum" name="StaNum" size="5" value="All">
+            <input type="file" id="myFile" name="filename" size="5">
+            <label for="percentage">Minimum Battery Percentage (between 0 and 100):</label>
+            <input type="number" id="percentage" name="percentage" min="0" max="100" step="5" value="75">
             <input type="submit">
         <h4>For specific information, enter Station Number, Date and Time then click the "Submit" button".</h4>
           <label for="StaNum">Station Number:</label>
@@ -95,6 +98,7 @@
             <tr>
               <th>Power (Solar)</th>
               <th>Power (Wind)</th>
+              <th>Power (Gas)</th>
               <th>Generating</th>
               <th>Stelite Communication</th>
               <th>Security Status</th>
@@ -105,6 +109,7 @@
             </tr>
             <tr>
               <td><p id="demo"></p></td> 
+              <td><p id="demo"></p></td>
               <td><p id="demo"></p></td>
               <td><p id="demo"></p></td>
               <td><p id="demo"></p></td>
